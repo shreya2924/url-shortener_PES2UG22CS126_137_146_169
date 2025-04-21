@@ -91,11 +91,12 @@ kubectl scale deployment url-shortener --replicas=5
 ### Autoscaling via HPA
 kubectl autoscale deployment url-shortener --cpu-percent=50 --min=2 --max=10  
 </details>
+
 ## 🔍 Monitoring & Logs
-<details>  
+
 kubectl get pods  
 kubectl logs <pod-name>
-</details>
+
 ## 🧪 Testing
 <details>
 ### ✅ Manual Testing
@@ -123,6 +124,7 @@ ab -n 1000 -c 10 http://<host>:<port>/
 Or use locust for interactive load testing.
 
 </details>
+
 ## 📥 Dependencies
 <details> 
 From requirements.txt:  
