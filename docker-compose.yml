@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  url-shortener:
+    build: .
+    ports:
+      - "56111:5000"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
